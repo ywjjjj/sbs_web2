@@ -1,0 +1,37 @@
+* {box-sizing: border-box;}
+
+/* 모바일 */
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {text-align: center;}
+
+header, footer {width: 100%;}
+nav, section {width: 100%; height: 400px;}
+
+footer {clear: both;}
+
+header, nav, section, footer {
+    padding: 20px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* 태블릿 - 800px 이상일 때 */
+@media screen and (min-width: 800px) {
+    .wrapper {width: 90%;}
+    header, footer  {width: 100%;}
+    nav, section {float: left;}
+    nav {width: 20%; margin-right: 1.5%;}
+    /* 640 - 135 - 110 =\ 495 */
+    section {width: 78.5%;}
+    footer {clear: both;}
+}
+
+/* PC - 1000px 이상일 때 */
+@media screen and (min-width: 1000px) {
+    .wrapper {width: 70%;}
+}

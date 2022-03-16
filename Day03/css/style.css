@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR&display=swap');
+/* 폰트 
+    1. Noto Sans
+        font-family: 'Noto Sans KR', sans-serif;
+    2. Nanum Myeongjo
+        font-family: 'Nanum Myeongjo', serif;
+*/
+
+/* reset */
+/* : 태그들이 가진 기본 스타일 속성을 초기화 한다. */
+* {margin: 0; padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style-type: none;}
+img {vertical-align: middle;}
+
+/* 레이아웃 */
+body {
+    font-family: 'Noto Sans Kr', sans-serif; /* 전체 */
+    font-size: 16px;
+    color: #7e7e72;
+}
+
+.font {font-family: 'Nanum Myeongjo', serif;} /* 강조는 따로 class 지정해둠 + html에서 추가 */
+.wrap {width: 100%; margin: 0 auto; overflow: hidden;}
+
+/* 헤더 */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 53px;
+    z-index: 1;
+    background-color: #c59f8b;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left; /* 가로 배치 */
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 30px;
+}
+header nav ul li a {color: #f2f2f2; font-size: 17px;}
+
+header nav ul li:hover {background-color: #ddd;}
+header nav ul li:hover a {color: black;}
+
+/* 섹션 - visual */
+section.visual {width: 100%; position: relative; margin-top: 53px;}
+section.visual img {width: 100%;}
+
+/* 이미지 위의 텍스트 영역 */
+section.visual .mainTitle {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+section.visual .mainTitle h2 {
+    font-size: 68px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+section.visual .mainTitle h2 span {
+    font-size: 50px;
+    color: #ff7777;
+}
+section.visual .mainTitle p {
+    font-size: 19px;
+    color: #f9f9f9;
+}
+
+/* inner */
+.inner {
+    width: 1050px; margin: 0 auto;
+}
+
+/* 섹션 - routine */
+section.routine {width: 100%; padding: 100px 0;}
+section.routine .inner {overflow: hidden;}
+section.routine .inner .title {
+    text-align: center;
+    color: #1b3413;
+}
+
+/* 타이틀 전체 */
+section.routine .inner .title h2 {
+    font-size: 50px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+section.routine .inner .title h2 span {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+section.routine .inner .title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #575757;
+    display: inline-block;
+    margin-bottom: 80px;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* 왼쪽 이미지 영역 */
+section.routine .inner p.img {width: 50%; float: left;}
+section.routine .inner p.img img {width: 100%;}
+
+/* 오른쪽 리스트 영역 */
+section.routine .inner ul {
+    width: 50%;
+    float: right;
+    padding-left: 100px;
+    box-sizing: border-box; /* padding 줄 때 항상 고려할 것 */
+}
