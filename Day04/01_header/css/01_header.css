@@ -1,0 +1,40 @@
+
+* {box-sizing: border-box;}
+body {margin: 0; padding: 0;}
+
+header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+header a {
+    float: left;
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+header a.logo {font-size: 25px; font-weight: bold;}
+header a:hover {background-color: #ddd; color: black;}
+header a.active {background-color: cornflowerblue; color: white;}
+.header-right {float: right;}
+
+/* 500px 이하 (모바일) */
+@media screen and (max-width: 500px) {
+    /* 메뉴 (가로 -> 세로) */
+    header a {
+        display: block;
+        float: none;
+    }
+
+    .header-right {
+        float: none;
+        margin-top: 20px;
+    }
+
+    .header-right a {text-align: center;}
+}

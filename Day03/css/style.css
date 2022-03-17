@@ -111,6 +111,29 @@ section.routine .inner .title p {
     position: relative;
 }
 
+/* 가상 선택자를 이용한 구분선 */
+section.routine .inner .title p::before {
+    content: '';
+    width: 1.5px;
+    height: 18px; /* 선의 크기 만들어주기 */
+    background-color: #575757;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.routine .inner .title p::after {
+    content: '';
+    width: 1.5px;
+    height: 18px;
+    background-color: #575757;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* 왼쪽 이미지 영역 */
 section.routine .inner p.img {width: 50%; float: left;}
 section.routine .inner p.img img {width: 100%;}
@@ -122,3 +145,121 @@ section.routine .inner ul {
     padding-left: 100px;
     box-sizing: border-box; /* padding 줄 때 항상 고려할 것 */
 }
+
+section.routine .inner ul li {
+    margin-bottom: 30px;
+    line-height: 1.4;
+    padding-left: 70px;
+    position: relative;
+}
+
+section.routine .inner ul li h3 {
+    font-size: 24px;
+    color: #222;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* 리스트의 숫자번호 추가 */
+section.routine .inner ul li::before {
+    content: '1';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    color: #6f8068;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+section.routine .inner ul li:nth-child(2)::before {
+    content: '2';
+}
+
+section.routine .inner ul li:nth-child(3)::before {
+    content: '3';
+}
+
+
+/* 섹션 - problems */
+section.problems {
+    width: 100%;
+    padding: 80px 0; /* 섹션 사이 간격 padding으로 지정 - margin 상쇄 피함 */
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+section.problems .inner .title {
+    margin-bottom: 30px;
+    color: #333;
+}
+section.problems .inner .title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+section.problems .inner .title p {
+    font-size: 20px;
+}
+
+section.problems .inner ul {width: 100%; overflow: hidden;}
+section.problems .inner ul li {
+    float: left; /* 가로 배치 */
+    width: calc(100%/4);
+    text-align: center;
+}
+section.problems .inner ul li .icon {
+    margin-bottom: 20px;
+}
+section.problems .inner ul li h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* 섹션 - detail */
+section.detail {
+    width: 100%;
+    padding: 88px 0;
+}
+
+section.detail .inner h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+section.detail .inner table {
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+
+section.detail .inner table td {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    width: 350px;
+}
+section.detail .inner table td.title {
+    background-color: #f9f9f9;
+    width: 175px;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    background-color: #99735f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+
+/* section 아래 inner 만들기 - 컨텐츠 가운데로, 1050,1040px 일반적 */
+/* position: absolute 위치 정하기 */
+/* 왼쪽, 오른쪽 반반 공간 나눠 갖기 - width: 50%; float: left/right; */
+/* margin 조절 */
+/* 가상 선택자 */
+/* list 사용, 가로배치 */
