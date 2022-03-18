@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마켓컬리 메뉴 만들기</title>
+    <link rel="stylesheet" href="css/01_market-menu.css">
+</head>
+<body>
+    <!-- 전체 영역 -->
+    <div class="wrap">
+        <div class="container">
+            <!-- 헤더 -->
+            <header>
+                <!-- 로그인 / 회원가입 -->
+                <div id="userMenu">
+                    <ul class="list_menu">
+                        <li class="menu"><a href="#" class="link_menu">회원가입</a></li>
+                        <li class="menu"><a href="#" class="link_menu">로그인</a></li>
+                        <li class="menu last"><a href="#" class="link_menu">고객센터</a></li>
+                    </ul>
+
+                </div>
+                <!-- 로고 영역 -->
+                <div id="headerLogo">
+                    <h1 class="logo">
+                        <a href="/" class="link_main">
+                            <img src="img/logo_x2.png" alt="마켓컬리 로고">
+                        </a>
+                    </h1>
+                </div>
+                </header>
+
+                <!-- GNB (Global Navigation Bar)
+                : 사이트 내의 모든 페이지에서 공통적으로 접근할 수 있는 메뉴 영역 -->
+                <div id="gnb">
+                    <div id="gnbMenu" class="gnb_kurly">
+                        <div class="inner_gnbkurly">
+                            <!-- 메인 메뉴 영역 -->
+                            <div class="gnb_main">
+                                <!-- 메뉴 영역 -->
+                                <ul class="gnb">
+                                    <li class="menu1">
+                                        <a href="#">
+                                            <span class="ico"></span>
+                                            <span class="txt">전체 카테고리</span>
+                                        </a>
+                                    </li>
+                                    <li class="menu2">
+                                        <a href="#" class="link new"><span class-txt>신상품</span></a>
+                                    </li>
+                                    <li class="menu3">
+                                        <a href="#" class="link best"><span class-txt>베스트</span></a>
+                                    </li>
+                                    <li class="menu4">
+                                        <a href="#" class="link bargain"><span class-txt>알뜰쇼핑</span></a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="#" class="link event"><span class-txt>특가/혜택</span></a>
+                                    </li>
+                                </ul>
+
+                                <!-- 검색 영역 -->
+                                <div class="gnb_search">
+                                    <form action="/">
+                                        <input type="text" name="sward" id="sward" label="검색어"
+                                        placeholder="검색어를 입력해주세요" class="input_search">
+                                        <!-- 검색 돋보기 아이콘 -->
+                                        <input type="image" src="img/ico_search_x2.png"
+                                            class="btn_search">
+                                    </form>
+                                </div>
+
+                                <!-- 장바구니 -->
+                                <div class="cart_count">
+                                    <div class="inner_cartcount">
+                                        <a href="/" class="btn_cart">
+                                            <span id="cart_item_count" count="num"></span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- 위치 -->
+                                <div class="location_set">
+                                    <button type="button" class="btn_location on">배송지 설정하기</button>
+                                </div>
+                            </div>
+
+
+                            <!-- 서브 메뉴 영역 -->
+                            <div class="gnb_sub">
+                                <div class="inner_sub">
+                                    <ul class="gnb_menu">
+                                        <li>
+                                            <!-- 카테고리 메뉴 - 1차 메뉴 -->
+                                            <a href="#" class="menu">
+                                                <span class="ico">
+                                                    <!-- 비활성화 -->
+                                                    <img src="img/icon_veggies_inactive_pc@2x.1586324570.png" alt=""
+                                                        class="ico_off">
+                                                    <!-- 활성화 -->
+                                                    <img src="img/icon_veggies_active_pc@2x.1586324570.png" alt=""
+                                                        class="ico_on">
+                                                </span>
+                                                <span class="tit">
+                                                    <span class="txt">채소</span>
+                                                </span>
+                                            </a>
+                                            <!-- 카테고리 하위 메뉴 - 2차 메뉴 -->
+                                            <ul class="sub_menu">
+                                                <!-- ·  : ㄱ 한자  -->
+                                                <li><a href="#" class="sub"><span class="name">친환경</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">고구마·감자·당근</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">시금치·쌈채소·나물</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">브로콜리·파프리카·양배추</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">양파·대파·마늘·배추</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">오이·호박·고추</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">냉동·이색·간편채소</span></a></li>
+                                                <li><a href="#" class="sub"><span class="name">콩나물·버섯</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
