@@ -160,3 +160,143 @@ header {margin-bottom: 20px;}
     font-size: 0;
     cursor: pointer;
 }
+
+/* section */
+section {
+    width: 1050px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid cornflowerblue;
+}
+
+/* 카테고리 풀다운 메뉴 */
+#gnb .gnb_sub {
+    display: none;
+    /* display: block; */
+    overflow: hidden;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding-top: 1px;
+    z-index: 300;
+    width: 219px;
+}
+
+/* 1차 메뉴 */
+#gnb .gnb_sub .inner_sub {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: url(../img/bg_gnb_sub_v3.png) repeat-y 0 0;
+}
+
+#gnb .gnb_sub .inner_sub ul.gnb_menu {
+    width: 219px;
+    /* width: 450px; */
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#gnb .gnb_sub .inner_sub ul.gnb_menu li {
+    width: 100%;
+    text-align: left;
+}
+
+#gnb .gnb_sub .inner_sub ul.gnb_menu li a.menu {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    padding: 8px 0 0 14px;
+    cursor: pointer;
+}
+
+/* 1차 메뉴에 마우스 올렸을 때 */
+#gnb .gnb_sub:hover {
+    animation: slideRight 0.4s;
+    /* 애니메이션 마지막 프레임에서 고정 */
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideRight {
+    0% {}
+    100% {width: 450px;}
+}
+
+/* 1차 메뉴에 아이콘 올렸을 때, 2차 메뉴 출력 */
+#gnb .gnb_sub .inner_sub ul.gnb_menu li:hover > ul.sub_menu {
+    display: block;
+}
+
+#gnb .gnb_sub .inner_sub ul.gnb_menu > li:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+/* 메뉴 아이콘 */
+#gnb .gnb_sub .ico {
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+#gnb .gnb_sub .ico img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 메뉴 아이콘 활성화/비활성화 */
+#gnb .gnb_sub .ico .ico_off {display: block;}
+#gnb .gnb_sub .ico .ico_on {display: none;}
+
+#gnb .gnb_sub ul.gnb_menu li:hover .ico_off {display: none;}
+#gnb .gnb_sub ul.gnb_menu li:hover .ico_on {display: block;}
+#gnb .gnb_sub ul.gnb_menu li:hover .txt {
+    color: #5f0080;
+    font-weight: bold;
+}
+
+#gnb .gnb_sub .txt {
+    float: left;
+    padding: 0 4px 0 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    white-space: nowrap; /* 긴 단어가 다음 칸으로 안 넘어감 (한 줄 안에서) */
+}
+
+/* 2차 메뉴 */
+#gnb .gnb_sub ul.sub_menu {
+    display: none;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: 219px;
+    width: 248px;
+    padding-left: 20px;
+    height: 100px;
+    background: url(../img/bg_1_1.gif) repeat 0 0;
+}
+
+#gnb .gnb_sub ul.sub_menu li {
+    width: 100%;
+    text-align: left;
+}
+#gnb .gnb_sub ul.sub_menu li:first-child {
+    padding-top: 11px;
+}
+#gnb .gnb_sub ul.sub_menu li a.sub {
+    display: block;
+    overflow: hidden;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+/* 2차 메뉴에 마우스 올렸을 때 */
+#gnb .gnb_sub ul.sub_menu li:hover a.sub span {
+    color: #5f0080;
+    border-bottom: 1px solid #5f0080;
+}
