@@ -5,6 +5,9 @@
 .product-list {
     display: flex;
     flex-wrap: wrap; /* 컨텐츠가 넘치면 다음 줄로 배치 */
+    /* 가로 사이즈 고정 */
+    width: 360px;
+    margin: 0 auto;
 }
 
 /* 모바일 */
@@ -58,6 +61,11 @@
 /* 반응형 적용하기 */
 /* 모바일 (가로) */
 @media screen and (min-width: 600px) {
+    .product-list {
+            /* 가로 사이즈 고정 */
+    width: 360px;
+    margin: 0 auto;
+    }
     .product-list .card {
         width: calc(96%/2); /* 카드 2칸 */
 }
@@ -65,6 +73,11 @@
 
 /* 태블릿 */
 @media screen and (min-width: 768px) {
+    .product-list {
+        /* 가로 사이즈 고정 */
+        width: 760px;
+        margin: 0 auto;
+    }
     .product-list .card {
         width: calc(94%/3); /* 카드 3칸 */
 }
@@ -72,6 +85,11 @@
 
 /* PC */
 @media screen and (min-width: 1200px) {
+    .product-list {
+        /* 가로 사이즈 고정 */
+        width: 1200px;
+        margin: 0 auto;
+    }
     .product-list .card {
         width: calc(92%/4); /* 카드 4칸 */
 }

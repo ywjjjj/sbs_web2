@@ -1,0 +1,79 @@
+
+* {margin: 0; padding: 0;}
+
+body {
+    background-color: #eee;
+}
+
+.grid-container {
+    display: grid;
+    padding: 1rem;
+    /* 
+        gird-template-colums
+        : 그리드 레이아웃의 열의 수와 크기를 지정하는 속성
+        repeat 안 써도 크기 4번 쓰면 4번 나옴
+    */
+    /* repeat(반복횟수, 반복값) 함수 */
+    /* minmax(열의 크기의 최솟값, 최댓값) */
+    /* fr 단위 : 그리드 레이아우스이 공간 비율을 나타내는 단위
+        (fraction - 단위분수 (1/N) 분자가 무조건 1 )
+    */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+}
+
+.item {
+    position: relative;
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    box-shadow: 0 5px 34px rgba(0, 0, 0, 0.48);
+}
+
+.item .img-box {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+}
+
+.item .img-box img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+}
+
+.item button {
+    position: absolute; /* 버튼 위치 */
+    top: 200px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #fbfbfb;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 쇼핑카트 아이콘 */
+.item button i {
+    font-size: 24px;
+    color: rosybrown;
+}
+
+/* 내용 영역 */
+.item .content {
+    padding: 0 10px 20px;
+    text-align: center;
+}
+.item .content h2 {margin: 10px 0;}
+.item .content .desc {margin-bottom: 20px;}
+.item .content .price {
+    position: relative;
+    width: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

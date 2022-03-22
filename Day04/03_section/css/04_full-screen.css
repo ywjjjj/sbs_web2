@@ -1,0 +1,95 @@
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    line-height: 1.7;
+    color: white;
+}
+
+/* 전체 영역 */
+.wrapper {
+    min-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+
+.big-bg {
+    background-image: url(../img/background.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {height: 100vh;}
+
+/* 헤더 */
+.page-header {
+    display: flex;
+    justify-content: space-between; /* 공백을 가지고 왼쪽 오른쪽에 배치가 됨 */
+    align-items: center; /* 수직축으로도 센터 맞춤 */
+    height: 90px;
+}
+
+.main-nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.main-nav a {
+    transition: all 0.5s ease;
+    padding-bottom: 10px;
+}
+
+.main-nav a:hover {
+    color: rebeccapurple;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rebeccapurple;
+}
+
+/* 내용 영역 */
+.main-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* 제목 */
+.page-title {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Gugi', cursive;
+}
+
+/* 내용 */
+.main-content p {
+    font-size: 1.2rem;
+    margin: 10px 0 42px;
+}
+
+/* 버튼 */
+.button {
+    font-size: 1.3rem;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    padding: 18px 23px;
+}
+
+.button:hover {
+    background-color: rgba(188,141,235,0.8);
+}
+
+/* 반응형 - ~ 720px 이하 */
+@media screen and (max-width: 760px) {
+    
+    /* 로고 */
+    /* 메뉴 크기 */
+    /* 타이틀 */
+    /* 컨텐츠 - 위치를 정가운데 */
+    /* 버튼 */
+    
+}
