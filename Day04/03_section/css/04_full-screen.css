@@ -87,9 +87,28 @@ body {
 @media screen and (max-width: 760px) {
     
     /* 로고 */
+    .logo {
+        width: 140px;
+    }
     /* 메뉴 크기 */
+    .main-nav {width: 200px;}
     /* 타이틀 */
+    .page-title {font-size: 2.5rem;}
     /* 컨텐츠 - 위치를 정가운데 */
+    .main-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0;
+        width: 100%;
+    }
     /* 버튼 */
+    .button {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
     
 }
+
+/* 원 코드 확인해야 함 */
