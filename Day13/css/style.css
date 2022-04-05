@@ -427,7 +427,7 @@ footer .inner .list li:last-child a {
     section.innovations .imgBox .inner .bottom {padding: 30px;}
     section.innovations .imgBox .inner .bottom p .clear {display: none;}
     section.innovations .imgBox .inner .bottom p {float: none; margin-bottom: 30px;}
-    section.innovations .imgBox .inner .bottom a {float: none; margin-left: 32%;}
+    section.innovations .imgBox .inner .bottom a {float: none; display: block; width: 80px; margin: 0 auto; text-align: center;}
     section.me {padding: 50px 0; margin-bottom: 80px;}
     section.me ul.in li em {display: block; float: none; width: 100%; font-size: 17px; margin-bottom: 5px;}
     section.sns ul li {width: 100%;}
@@ -452,7 +452,7 @@ footer .inner .list li:last-child a {
         border: 1px solid #ddd; box-sizing: border-box; background-color: #fafafa; margin-bottom: 10px;
     }
     section.about ul li a .text p.more {display: none;}
-    section.innovations .imgBox .inner .bottom a {margin-left: 20%; padding: 7px 12px; /* a태그는 가로사이즈 가질 수 없음 */}
+    section.innovations .imgBox .inner .bottom a {padding: 7px 12px; /* a태그는 가로사이즈 가질 수 없음 */}
     section.me ul.list > li {padding: 20px 0 20px 45px;}
     footer .inner .address {margin-left: 15%;}
     footer .inner .address li:last-child {margin-left: 22%;}
@@ -472,7 +472,7 @@ footer .inner .list li:last-child a {
     section.about ul li a .text h3 {font-size: 18px; margin-bottom: 5px;}
     section.about ul li a .text p {font-size: 15px;}
     section.innovations .imgBox {height: 300px;}
-    section.innovations .imgBox .inner .bottom a {margin-left: 18px;}
+    section.innovations .imgBox .inner .bottom a {}
     footer .inner .address {margin-left: 5%;}
     footer .inner .address li:last-child {margin-left: 27%;}
 }
