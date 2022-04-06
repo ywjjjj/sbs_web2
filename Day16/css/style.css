@@ -144,3 +144,90 @@ footer .box .col {
     width: 33%; height: 100%; border: 1px solid firebrick;
 }
 footer .box .col ul {height: 100%;}
+
+
+/* 반응형 */
+
+/* PC (Big) */
+/* ~1800px */
+
+/* PC */
+/* 1200px~1799px */
+@media screen and (max-width: 1799px) {}
+
+/* 태블릿 (가로) */
+/* 900px ~ 1199px */
+@media screen and (max-width: 1199px) {
+    /* 전체영역 */
+    .inner-box {width: 80%;}
+
+    /* 태블릿/모바일 로고 */
+    .header .info h1 {width: 40%;}
+
+    /* 상품 목록 - 3개 */
+    .product-list {width: 80%;}
+    .product-list .card {width: calc(94%/3);}
+
+}
+
+/* 모바일 (가로) 태블릿 (세로 */
+/* 600px ~ 899px */
+@media screen and (max-width: 899px) {
+    /* 전체 영역 */
+    .inner-box {width: 100%;}
+
+    /* PC / 모바일 전환 */
+    .pc {display: none;}
+    .mobile {display: block;}
+
+    /* 모바일 햄버거 메뉴 */
+    .mobile-gnb-box {padding: 20px; font-size: 40px;}
+
+    /* 섹션: visual */
+    section.visual .title {display: block;}
+    section.visual .inner-box {display: block;}
+    section.visual .inner-box .title-content {width: 100%;}
+    section.visual .inner-box .main-img {width: 100%;}
+
+    /* 카테고리 */
+    section .section-cate .inner span {
+        padding: 10px 25px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    section .section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    /* 섹션: 상품목록 - 2개 */
+    .product-list {width: 100%;}
+    .product-list .card {width: calc(96%/2);}
+
+    /* 섹션: 기타 */
+    section.etc .box {display: block;}
+    section.etc .box .col.left,
+    section.etc .box .col.right {
+        float: left; width: 50%; height: 150px;
+    }
+
+    section.etc .box .col.bottom {
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 250px;
+    }
+
+    /* 푸터 */
+    footer .box {flex-direction: column;}
+    footer .box .col {width: 100%;}
+}
+
+/* 모바일 (가로) 태블릿 (세로 */
+/* ~599px */
+@media screen and (max-width: 599px) {
+    /* 섹션: 상품목록 - 2개 */
+    .product-list {width: 100%;}
+    .product-list .card {width: calc(94%/1); margin-left: 3.5%;}
+}
+
