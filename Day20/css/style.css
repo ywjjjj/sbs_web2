@@ -1,0 +1,160 @@
+
+/* 공통 스타일 */
+/* 버튼 */
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: var(--sub);
+    color: var(--white);
+    margin: 30px auto 0;
+    border-radius: 30px;
+    box-shadow: 5px 5px rgba(100, 100, 100, 0.8);
+}
+
+/* 섹션별 타이틀 */
+.section-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.info {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+span {color: var(--main);}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--gray);
+    z-index: 20;
+}
+
+header .inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+/* 헤더- 로고 */
+header .inner .logo-box {}
+header .inner .logo-box .logo {
+    display: block;
+    width: 158px;
+    height: 70px;
+    background: url(../img/logo.svg) 50% 50% / 158px 40px no-repeat;
+    text-indent: -9999px;
+}
+
+/* 헤더 - 메뉴 */
+header .inner .gnb {margin-left: 30px;}
+header .inner .gnb nav {margin-top: 5px;}
+header .inner .gnb nav ul {display: flex;}
+header .inner .gnb nav ul li {margin-right: 30px;}
+header .inner .gnb nav ul li a {
+    display: block; font-size: 1.2rem; line-height: 1.2rem;
+    color: black; font-weight: 700;
+}
+header .inner .gnb nav ul li a {
+    display: block; font-size: 1.2rem; line-height: 1.2rem;
+    color: black; font-weight: 700;
+}
+header .inner .gnb nav ul li a:hover {color: var(--main);}
+
+/* 헤더 - 유틸 */
+header .inner .util {display: flex; justify-content: flex-end; margin-left: 70px;}
+header .inner .util .util-left {font-size: 15px;}
+header .inner .util .util-left ul {display: flex; align-items: center;}
+header .inner .util .util-left ul li {margin-right: 15px; line-height: 20px;}
+header .inner .util .util-left ul li a {font-weight: 600;}
+header .inner .util .util-left ul li a.point {color: var(--main);}
+
+header .inner .util .util-right {font-size: 16px; line-height: 20px;}
+header .inner .util .util-right a.join {margin-right: 15px;}
+header .inner .util .util-right a.login {
+    padding: 10px 15px;
+    background-color: var(--main);
+    border-radius: 12px;
+    color: white;
+}
+
+/* 섹션: main */
+section.main {
+    width: 100%;
+    height: 100vh;
+    min-height: 815px;
+    max-height: 815px;
+    background: url(../img/img_mainvisual_bg.png) no-repeat center;
+    position: relative;
+}
+section.main .main-title {
+    margin: 50px auto;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
+}
+
+section.main .main-title .title {font-size: 52px;}
+section.main .main-title .sub-title {font-size: 24px;}
+
+/* 섹션: main - 라면 슬라이드 */
+.ramen-slide {position: absolute; left: 50%;}
+#ramen-slide01 {bottom: 30%; transform: translateX(-50%);}
+#ramen-slide02 {bottom: 30%; transform: translate(-50%, 100%);}
+
+.ramen-slide .slide {display: flex; justify-content: center;}
+.ramen-slide .slide li {
+    width: 180px;
+    height: 180px;
+    background-color: var(--white);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 5px;
+}
+.ramen-slide .slide li img {
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 섹션: main - 캐릭터 */
+section.main .img-box {
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translate(-50%);
+    width: 300px;
+    z-index: 10;
+}
+section.main .img-box img {width: 100%;}
+
+
+/* 반응형 */
+.pc {display: block !important;}
+.pc-felx {display: flex !important;}
+.mobile {display: none !important;}
+
+@media screen and (max-width: 600px) {
+    .pc {display: none !important;}
+    .pc-felx {display: none !important;}
+    .mobile {display: block !important;}
+}
