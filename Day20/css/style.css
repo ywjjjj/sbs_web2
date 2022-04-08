@@ -147,6 +147,208 @@ section.main .img-box {
 }
 section.main .img-box img {width: 100%;}
 
+/* 섹션: intro */
+section.intro {
+    min-height: 700px;
+    background-color: #eee;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* 섹션: recommend */
+section.recommend {
+    text-align: center;
+    padding: 120px 0;
+}
+
+section.recommend .slide-box {
+    width: 1440px;
+    margin: 100px auto;
+}
+section.recommend .slide-box ul {
+    display: flex;
+}
+section.recommend .slide-box ul li {
+    position: relative;
+    width: calc(100%/3);
+}
+section.recommend .slide-box ul li .label {
+    padding: 16px 28px;
+    background-color: var(--sub);
+    border-radius: 38px;
+    color: var(--white);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 160px;
+}
+section.recommend .slide-box ul li .content-box {
+    margin-top: 50px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+section.recommend .slide-box ul li .content-box p {
+    font-size: 20px;
+}
+
+/* 섹션: about */
+section.about {
+    min-height: 1800px;
+    padding: 120px 0;
+    box-sizing: border-box;
+}
+
+section.about .inner {
+    width: 100%;
+    min-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section.about .inner .about-list {position: relative;}
+section.about .inner .about-list .img-box {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+}
+section.about .inner .about-list .card-box {
+    width: calc(50%-40%);
+    background-color: var(--bg-light);
+    max-width: 600px;
+    height: 600px;
+    padding: 50px 50px 0 50px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 80px;
+}
+section.about .inner .about-list .card-box.left {
+    float: left;
+}
+section.about .inner .about-list .card-box.right {
+    float: right;
+    top: 120px;
+}
+
+section.about .inner .about-list .card-box.box1 {
+    background-color: url(../img/img_about_bg01.png) bottom center/100% no-repeat;
+    background-color: var(--bg-light);
+}
+section.about .inner .about-list .card-box.box2 {
+    background-color: url(../img/img_about_bg02.png) bottom center/100% no-repeat;
+    background-color: var(--bg-light);
+}
+section.about .inner .about-list .card-box.box3 {
+    background-color: url(../img/img_about_bg03.png) bottom center/100% no-repeat;
+    background-color: var(--bg-light);
+}
+section.about .inner .about-list .card-box.box4 {
+    background-color: url(../img/img_about_bg04z.png) bottom center/100% no-repeat;
+    background-color: var(--bg-light);
+}
+
+section.about .about-title {
+    font-size: 36px;
+    line-height: 40px;
+}
+section.about .about-info {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--main);
+}
+.btn-more {
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 25px;
+    padding: 10px;
+    background-color: black;
+    color: var(--white);
+    font-size: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+
+/* 섹션: review */
+section.review {
+    text-align: center;
+    padding: 120px 0;
+    background-color: var(--peach-orange);
+    box-sizing: border-box;
+    min-height: 800px;
+}
+section.review .card-list {
+    display: flex;
+    justify-content: center;
+}
+section.review .card-list ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+section.review .card-list .card-box {
+    width: 310px;
+    height: 480px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+section.review .card-list .card-box .img-box {
+    width: 100%;
+    height: 240px;
+}
+section.review .card-list .card-box .img-box img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+section.review .card-list .card-box .content {
+    width: 100%;
+    height: 240px;
+    background-color: var(--white);
+}
+section.review .card-list .card-box .content .inner {
+    padding: 20px;
+}
+section.review .card-list .card-box .content .inner .review-name {
+    text-align: left;
+    margin-bottom: 10px;
+}
+section.review .card-list .card-box .content .inner .review-content {
+    font-size: 12px;
+    text-align: left;
+    color: gray;
+}
+section.review .card-list .card-box .content .inner a {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: gray;
+}
+section.review .card-list .card-box .content .inner .sub-title {
+    font-size: 12px;
+    text-align: left;
+    color: var(--main);
+}
+section.review .card-list .card-box .content .inner .sub-content {
+    font-size: 10px;
+    text-align: left;
+    color: gray;
+}
+section.review .card-list .card-box .content .inner .date {
+    font-size: 10px;
+    text-align: right;
+    color: gray;
+}
+
+
 
 /* 반응형 */
 .pc {display: block !important;}
