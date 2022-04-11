@@ -349,6 +349,204 @@ section.review .card-list .card-box .content .inner .date {
 }
 
 
+/* 섹션 - banner */
+section.banner {
+    min-height: 210px;
+    width: 100%;
+}
+
+section.banner .inner {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+section.banner .left-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+}
+section.banner .left-title .title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+section.banner .left-title .sub-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+section.banner .left-title a {
+    font-size: 16px;
+    color: var(--white);
+}
+
+section.banner .right-img {margin-top: -90px;}
+section.banner .right-img img {width: 556px;}
+
+section.coupon {background-color: rgb(79,196,126);}
+
+/* 섹션: app */
+section.app {
+    min-height: 640px;
+    background-color: var(--light-gray);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 120px 0;
+}
+section.app .inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+section.app .inner .card-box {
+    margin: 0 auto;
+    width: calc(50%-40px);
+    background: url(../img/img_subs_bg.png) bottom center no-repeat;
+    background-color: var(--white);
+    min-width: 600px;
+    height: 600px;
+    padding: 50px 60px 0 50px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 80px;
+}
+section.app .inner .card-box .app-info {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--main);
+    text-align: center;
+}
+section.app .inner .card-box .app-title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+}
+section.app .inner .btn {
+    display: inline-block; margin-bottom: 20px;
+}
+section.app .inner .detail {
+    display: block; text-align: center;
+}
+
+
+/* 섹션 - present */
+section.present {background-color: var(--bg-light); overflow: hidden;}
+section.present .left-title .sub-title {color: black;}
+section.present .left-title a {color: var(--sub);}
+
+section.present .right-img {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
+section.present .right-img img {width: 300px;}
+
+/* 섹션: sns */
+section.sns {
+    min-height: 460px;
+    padding: 120px 0;
+    background-color: var(--light-gray);
+    box-sizing: border-box;
+}
+
+section.sns .inner {
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+section.sns .inner .title {font-size: 32px; margin-bottom: 20px;}
+section.sns .inner .sub-title {margin-bottom: 10px; color: var(--main);}
+section.sns .inner .sub-box {}
+section.sns .inner .sub-box a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+section.sns .inner .sub-box a img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+/* 푸터 */
+footer {}
+footer .inner {
+    width: 100%;
+    border-top: 1px solid var(--gray);
+}
+footer .fnb {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .fnb .fnb-left {width: 30%; font-size: 14px;}
+footer .fnb .fnb-left ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+}
+footer .fnb .fnb-left a:hover {color: var(--main);}
+
+footer .fnb .fnb-right {
+    width: 18%; font-size: 14px;
+}
+footer .fnb .fnb-right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;}
+footer .fnb .fnb-right ul li img {width: 30px;}
+
+footer .footer-bottom {}
+footer .footer-bottom .info {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+footer .footer-bottom .info .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-bottom .info .footer-content .info-title {
+    font-size: 20px;
+}
+footer .footer-bottom .info .footer-content ul li {
+    font-size: 14px;
+}
+
+footer .footer-bottom .info .footer-content .left-content ul li span {
+    display: inline-block;
+    width: 150px;
+}
+footer .footer-bottom .info .footer-content .right-content ul li span {
+    display: inline-block;
+    width: 100px;
+}
+
+footer .copyright {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--main);
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
 
 /* 반응형 */
 .pc {display: block !important;}
