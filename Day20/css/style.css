@@ -200,7 +200,7 @@ section.about {
 
 section.about .inner {
     width: 100%;
-    min-width: 1320px;
+    max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -214,11 +214,11 @@ section.about .inner .about-list .img-box {
     right: 30px;
     width: 300px;
     height: 300px;
-    z-index: -1;
+    z-index: 1;
 }
 section.about .inner .about-list .card-box {
-    width: calc(50%-40%);
-    background-color: var(--bg-light);
+    width: calc(50%-40px);
+    /* background-color: var(--bg-light); */
     max-width: 600px;
     height: 600px;
     padding: 50px 50px 0 50px;
@@ -235,19 +235,19 @@ section.about .inner .about-list .card-box.right {
 }
 
 section.about .inner .about-list .card-box.box1 {
-    background-color: url(../img/img_about_bg01.png) bottom center/100% no-repeat;
+    background: url(../img/img_about_bg01.png) bottom center/100% no-repeat;
     background-color: var(--bg-light);
 }
 section.about .inner .about-list .card-box.box2 {
-    background-color: url(../img/img_about_bg02.png) bottom center/100% no-repeat;
+    background: url(../img/img_about_bg02.png) bottom center/100% no-repeat;
     background-color: var(--bg-light);
 }
 section.about .inner .about-list .card-box.box3 {
-    background-color: url(../img/img_about_bg03.png) bottom center/100% no-repeat;
+    background: url(../img/img_about_bg03.png) bottom center/100% no-repeat;
     background-color: var(--bg-light);
 }
 section.about .inner .about-list .card-box.box4 {
-    background-color: url(../img/img_about_bg04z.png) bottom center/100% no-repeat;
+    background: url(../img/img_about_bg04.png) bottom center/100% no-repeat;
     background-color: var(--bg-light);
 }
 
